@@ -1,0 +1,4 @@
+zappjs:
+  material-ui-icons:
+    path: ~/Developer/zapp-generator-material-ui-icons
+    version: master

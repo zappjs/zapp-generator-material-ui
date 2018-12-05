@@ -1,0 +1,32 @@
+engine: handlebars
+iterator: dialogs
+template: component
+mapping:
+  allImports: /imports
+  events: ./events
+  imports: ./imports
+  hooks: ./hooks
+  key: '@key'
+  name: ./name
+  props: ./props
+  render: ./render
+  state: ./state
+  stateProps:
+    path: ./props
+    filter:
+      state:
+        minLength: 1
+        type: string
+        required: true
+  dispatchProps:
+    path: ./props
+    filter:
+      dispatch:
+        minLength: 1
+        type: string
+        required: true
+filename:
+  engine: handlebars
+  template: 'src/dialogs/{{{case name ''kebab''}}}/{{{case name ''pascal''}}}.jsx'
+  mapping:
+    name: '@key'

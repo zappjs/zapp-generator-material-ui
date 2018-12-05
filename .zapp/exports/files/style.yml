@@ -1,0 +1,10 @@
+engine: handlebars
+iterator: dialogs
+template: style
+filename:
+  engine: handlebars
+  template: 'src/dialogs/{{{case name ''kebab''}}}/{{{case name ''pascal''}}}.sass'
+  mapping:
+    name: '@key'
+mapping:
+  styles: ./styles
